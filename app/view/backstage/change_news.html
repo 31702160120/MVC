@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	 <script type="text/javascript" charset="utf-8" src="public/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="public/ueditor/ueditor.all.min.js"> </script>
+	<script type="text/javascript" charset="utf-8" src="public/ueditor/lang/zh-cn/zh-cn.js"></script>
+	<title>Document</title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+		}
+				
+		table{
+			height:200px;
+			width:900px;
+			text-align: center;
+		}
+	.tou{
+		background-color: #66A8CC;
+	}
+	.wei{
+		background-color: #BDC5B4;
+	}	
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		<table border="1"  cellpadding="0" cellspacing="0" align="center">
+			<tr class="tou">
+				<td colspan="2">信息</td>
+			</tr>
+			<tr class="wei">
+				<td colspan="2"style="text-align: left;" >当前位置:&nbsp;
+					<a href="#">内容</a> > 
+					<a href=""> 信息发布管理</a> > 内容
+				</td>
+			</tr>
+			<tr>
+				<td style="width:100px; align-content: center; height: 40px;">栏目：
+				</td>
+				<td>
+					<select name="spec" style="width: 150px; height: 30px; margin-top: 5px;float: left;">
+					{foreach $data as $value}	
+					<option  value="{$value['categoryId']}" {$value['type']} >{$value['categoryName']}</option>
+					{/foreach}
+					</select>
+				</td>
+			</tr>
+			<tr style="height: 40px;">
+				<td>标题：
+				</td>
+				<td >
+					<input type="text" style="float: left;width:500px;" name="title" id="title" value="{$title}"/>
+					<i style="color: red; float: left;">*必填</i>
+				</td>
+			</tr>
+			<tr height="50px">
+				<td>关键词：</td>
+				<td>
+					<input type="text" style="float: left;width:500px;"id="keywords" name="keywords" value="{$keywords}"/>
+					<i style="color: red;float: left;">*必填</i>
+			</td>
+			</tr>
+			<tr height="50px">
+				<td>文件作者：</td>
+				<td>
+					<input type="text" style="float: left;width:400px;" id="author" name="author" value="{$author}"/>
+					<i style="color: red;float: left;">*必填</i>
+				</td>
+				</tr>
+			<tr style="height: 400px;">
+				<td>文章内容</td>
+				<td>		
+					<script id="container" name="content" type="text/plain" style="width: 800px;height: 300px;">
+						{$content}
+					</script>
+					 <!-- 实例化编辑器 -->
+					<!-- <textarea  id="container" name="content" ><?php echo $rows['content'];?></textarea>-->
+					<script type="text/javascript">
+						var ue = UE.getEditor('container');
+					</script>
+				</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" width="100px" style="float: left;margin-left: 5px;" value="保存并发布信息" id="ok" name="ok" />
+					<input type="submit" width="50px" style="float: left; margin-left: 5px;"  value="关闭" id="guan" name="guan"/>
+				</td>
+			</tr>
+			</table>			
+	</form>
+</body>
+</html>
+

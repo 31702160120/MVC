@@ -1,0 +1,38 @@
+<meta charset="utf-8" />
+<style>a{text-decoration: none;display:blocks;height:30px;width:80px;float:left;line-height: 30px;color:#000000;border-radius:10px; margin-left:40px;}
+		</style>
+		<table border="1" width="500px" cellpadding="5" cellspacing="0" align="center">
+				<tr >
+				<td  align="center" colspan="6">信息管理</td>
+				</tr>
+				<tr align="center">
+				<td>序号</td>
+				<td>账号名</td>
+				<td>重置密码</td>
+				<td>删除操作</td>
+				</tr>
+				{foreach $data as $value}
+				<tr align="center"><td>{$value['id']}</td>
+				<td >{$value['username']}</td>
+				<td><a href="javascript:void(0)" onclick="return resetpwd({$value['id']})"
+				 style="background-color:hotpink;">重置密码</a></td>
+				<td> <a href="javascript:void(0)" onclick="return del({$value['id']})"
+				 style="background-color: #00B3FF;">删除</a></td>		
+				</tr>
+				{/foreach}
+				
+</table>
+<script type="text/javascript">
+
+	function del(id){
+	if(confirm("您确定要删除吗?")){
+		location.href = "index.php?m=Logl_name&a=delete&id=" + id;
+	}
+	}
+
+function resetpwd(id){
+	if(confirm("您确定要重置密码吗?")){
+		location.href = "index.php?m=Logl_name&a=Reset&id=" + id;
+	}
+}
+</script>

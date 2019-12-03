@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* ===导航开始=== */
+.mainNav UL{
+	list-style:none;
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+.mainNav UL LI {
+	width:auto;
+	line-height:35px;
+	float:left;
+	background:none;
+	font-size:15px; 
+	color:#fff;
+	text-align:center;
+	font-family:"宋体", Arial, Verdana;
+
+}
+.mainNav ul li.line {
+	width:4px;
+	height:35px;
+	float:left;
+	background:url(../images/nav_line.jpg) no-repeat 1px 7px;
+}
+.mainNav UL LI A {
+	width:auto;
+	height:35px;
+	line-height:35px;
+	padding-left:15px;
+	padding-right:15px; 
+	float:left;
+	cursor:pointer;
+	display:block;
+	color:#666666; 
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.navi {
+    width:1000px;
+    height:73px;
+	margin-top:5px;
+	float:left;
+	overflow:hidden;
+	border-bottom:1px solid #cdcdcd;
+}
+
+.navi .padder{
+	width:1000px; margin:0 auto; text-align:left;
+}
+.navi .padder .nav{
+	height:35px;
+	background-color:#3cb8eb;
+}
+
+.navi .padder .nav .mainNav{
+	margin-left:30px;
+	padding:0;
+	top:0px;
+}
+.navi .padder .nav .mainNav a:link,.navi .padder .nav .mainNav a:visited,.navi .padder .nav .mainNav a:active{
+	width:auto; height:35px; display:inline-block; text-align:center; color:#fff; font-weight:bold; font-size:16px; 
+}
+.navi .padder .nav .mainNav a:hover{
+	color:#f7e655; text-decoration:none;
+}
+.navi .padder .nav .mainNav a.actived:link,.navi .padder .nav .mainNav a.actived:visited,.navi .padder .nav .mainNav a.actived:hover,.navi .padder .nav .mainNav a.actived:active{background:url(../images/mainNav_bg.jpg) no-repeat center bottom;  background-color:#80dbff; color:#024a68;}
+/*二级菜单开始*/
+.navi .padder .secondNav{
+	line-height:37px; text-align:left; float:left; font-size:14px; 
+}
+.navi .padder .secondNav a{
+	color:#000; display:inline-block; padding:0 3px; margin-right:10px;float:left;
+}
+.navi .padder .secondNav a:hover {
+	color:#006892;float:left; font-weight:bold; display:block; border-bottom:1px solid #80dbff;
+}
+/*控制二级菜单的位置开始*/
+.navi .padder .secondNav .subNav1{
+	display:inline;
+}
+.navi .padder .secondNav .subNav2{
+	padding-left:75px;display:none;
+}
+.navi .padder .secondNav .subNav3{
+	padding-left:150px;display:none;
+}
+.navi .padder .secondNav .subNav4{
+	padding-left:250px;display:none;
+}
+.navi .padder .secondNav .subNav5{
+	padding-left:430px;display:none;
+}
+.navi .padder .secondNav .subNav6{
+	padding-left:500px;display:none;
+}
+.navi .padder .secondNav .subNav7{
+	padding-left:580px;display:none;
+}
+.navi .padder .secondNav .subNav8{
+	padding-left:755px;display:none;
+}
+.navi .padder .secondNav .subNav9{
+	padding-left:895px;display:none;
+}
+/*控制二级菜单的位置结束*/
+/* ===导航结束=== */
+
+
+
+
+
+
+
+

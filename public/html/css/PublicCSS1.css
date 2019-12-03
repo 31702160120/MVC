@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px; background:#FFF;
+}
+iframe{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px; margin:0px;
+}
+html{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px; background-color:#FFF; 
+}
+div{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+dl{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+dt{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+dd{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+ul{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+ol{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+li{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+h1{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+h2{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+h3{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+h4{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+h5{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+h6{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+form{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+input{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+p{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+table{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+th{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+td{
+	padding-bottom:0px; margin:0px; padding-left:0px; padding-right:0px; padding-top:0px;
+}
+img{
+	border-bottom:0px; border-left:0px; border-top:0px; border-right:0px; border-top-width:0px; border-right-width:0px;
+	border-bottom-width:0px; border-left-width:0px;
+}
+
+a{
+	color:#000; text-decoration:none;
+}
+a:link,a:visited,a:active{
+	text-decoration:none;
+}
+a:hover{
+	color:#8c0201; text-decoration:underline;
+}
+.more{
+	float:right;
+	color:#a50601;
+	font-size:12px;
+	padding-right:10px;
+}
+.hktime{
+	float:right;
+	font-size:12px;
+	color:#585858;
+	margin-left:20px;
+	padding-right:10px;
+	display:inline;
+}
+.clear{clear:both;}
+/* ===全局完=== */
+
+#allweb{ 
+    margin:0px auto;
+    width:1000px;
+    overflow:hidden;
+}
+.header_nav{
+	width:1000px;
+	height:38px;
+	line-height:38px;
+	overflow:hidden;
+	margin:0px auto;
+	background-color:#fafafa;
+}
+.header_nav h1{
+	float:left;
+	padding-left:23px;
+	line-height:36px;
+	overflow:hidden;
+    font-size:13px;
+	font-weight:100;
+	color:#000;
+}
+.header_nav h2{
+	float:right;
+	padding-right:16px;
+	line-height:36px;
+	overflow:hidden;
+    font-size:13px;
+	font-weight:100;
+	color:#000;
+}
+.header{
+	width:1000px;
+	height:210px;
+	overflow:hidden; 
+	margin:0px auto;
+	background:url(../images/header_bg.jpg) repeat-x;
+}
+.header img{
+	width:1000px;
+	height:205px;
+}
+.daohang{
+	width:960px;
+	height:43px;
+	line-height:43px;
+	padding-left:40px;
+	overflow:hidden;
+    font-size:12px;
+	color:#333;
+	margin:0px auto;
+	background:url(../images/position_bg_001.gif) 10px 12px no-repeat;
+}
+.daohang a{color:#333;}
+.daohang a:hover{color:#f60;}
+/* ===头部完=== */
+
+
+
+
+/*版权*/
+.footer{
+	width:992px;
+	height:160px;
+	margin:0 auto;
+	margin-top:8px;
+	overflow:hidden;
+	font-size:12px;
+	background:url(../images/footer_bg.jpg) no-repeat top;
+}
+.footer_left{
+	width:250px;
+	height:100px;
+	line-height:23px;
+	float:left;
+	padding-left:80px;
+	margin-left:100px;
+	margin-top:50px;
+	overflow:hidden;
+	display:inline;
+	background:url(../images/footer_hua.jpg) no-repeat;
+}
+.footer_right{
+	width:500px;
+	height:90px;
+	line-height:23px;
+	float:left;
+	margin-left:40px;
+	margin-top:60px;
+	overflow:hidden;
+}
+.footer_right a{
+	color:#0f71d3;
+	text-decoration:underline;
+}
+.footer_right a:hover{
+	color:#C30;
+	text-decoration:underline;
+}
+.footer_xian{
+	width:2px;
+	height:80px;
+	float:left;
+	margin-top:55px;
+	display:inline;
+	border-left:1px solid #c3c1c1;
+}
+.footer_line
+{
+	width:992px;
+	height:5px;
+	float:left;
+	background-color:#006599;
+
+	}
+.footer_info
+{
+	width:992px;
+	height:80px;
+	margin:0 auto;
+	margin-top:8px;
+	overflow:hidden;
+	font-size:12px;
+	text-align:center;
+	}
+
+/*版权*/
+
+
+
+
+
+
+
+
+
+
+
+
+
